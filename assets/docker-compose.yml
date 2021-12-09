@@ -10,7 +10,7 @@ services:
     restart: always
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --skip-innodb-read-only-compressed
     volumes:
-      - db:/var/lib/mysql
+      - /share/Docker/db:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_PASSWORD=password
@@ -25,7 +25,7 @@ services:
     links:
       - db
     volumes:
-      - nextcloud:/var/www/html
+      - /share/Docker/nextcloud:/var/www/html
     environment:
       - MYSQL_PASSWORD=password
       - MYSQL_DATABASE=nextcloud
