@@ -1,4 +1,4 @@
-This repo permit to create your own nextcloud version for Asustor ADM. 
+This repo permits to create your own nextcloud version for Asustor ADM. 
 Indeed the version in the App Center seems to work with SQLite as the database.
 Because SQLite must be used only for development environment, I recreate
 the package to add a database in the docker. 
