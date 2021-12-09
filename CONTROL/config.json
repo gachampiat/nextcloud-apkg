@@ -1,0 +1,41 @@
+{
+	"general":{
+		"package":"nextcloud-postgres-docker",
+		"name":"Nextcloud postgres",
+		"version":"23.0.0",
+		"depends":[
+			"docker-ce(>=19.03.8.r5)"
+		],
+		"developer":"Gabriel Champiat",
+		"maintainer":"Gabriel Champiat",
+		"email":"gabriel@champiat",
+		"website":"https://nextcloud.com/",
+		"architecture":"x86-64",
+		"firmware":"3.5.0"
+	},
+	"adm-desktop": {
+		"app": {
+			"port": 8988,
+			"protocol": "http",
+			"type": "custom",
+			"url": "/" 
+		},
+		"privilege": {
+			"accessible": "administrators", 
+			"customizable": true 
+		} 
+	},
+	"register":{
+		"share-folder":[
+			{
+				"name":"Docker",
+				"description":"Docker directory"
+			}
+		],
+		"boot-priority":{
+			"start-order":64,
+			"stop-order":36
+		},
+		"port":[8988]
+	}
+}

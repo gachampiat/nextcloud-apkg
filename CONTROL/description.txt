@@ -1,0 +1,2 @@
+Nextcloud - a safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
+Nextcloud is an open source, self-hosted solutions ensure you know where data is, who has access, and that even meta-data does not leak.
